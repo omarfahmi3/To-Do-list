@@ -1,0 +1,123 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container {
+  min-height: 1000px;
+  width: 100%;
+  background: linear-gradient(135deg, #153677, #4e084e);
+  padding: 10px;
+}
+.to-do-app {
+  width: 100%;
+  max-width: 540px;
+  margin: 20px auto 10px;
+  background-color: #fff;
+  margin-top: 80px;
+  border-radius: 10px;
+  padding: 20px 30px 70px;
+}
+
+.to-do-app h2 {
+  display: flex;
+  color: #002765;
+  align-items: center;
+  width: 100%;
+}
+.to-do-app h2 img {
+  margin: 10px;
+  width: 30px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 30px;
+  padding-left: 20px;
+  background-color: #edeef0;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: 10px;
+  font-weight: 100;
+}
+button {
+  width: 100px;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  background-color: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  padding: 10px;
+}
+.tasks {
+  list-style: none;
+  margin: 10px;
+  padding: 10px 7px;
+}
+.tasks li {
+  list-style: none;
+  padding: 14px 8px 12px 40px;
+  font-size: 17px;
+  position: relative;
+  user-select: none;
+}
+.tasks li .unchecked-span {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 1px solid #c4c0c0;
+  top: 10px;
+  left: 8px;
+}
+ul .checked {
+  color: #555;
+  text-decoration: line-through;
+}
+.tasks .checked-span {
+  content: " ";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  background-image: url(imges/checked.png);
+  background-size: cover;
+  background-position: center;
+  top: 10px;
+  left: 8px;
+  z-index: 1000;
+  cursor: pointer;
+  display: none;
+}
+.empty {
+  font-weight: 300;
+  margin-left: 13px;
+  color: rgba(255, 0, 0, 0.707);
+  font-size: 12px;
+  display: none;
+}
+
+.delete-span{
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  background: #e2c9c9;
+  width: 20px;
+  text-align: center;
+  border-radius: 50%;
+  transition: opacity 0.3s;
+}
+  .delete-span:hover {
+    opacity: 0.8;
+  }
+  
